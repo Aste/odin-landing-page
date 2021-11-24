@@ -12,35 +12,60 @@ body{
 }
 
 header, footer{
+    /* outline: 2px solid red; */
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
     color: white;
+    padding: 10px 100px 10px 100px;
 }
 
-ul{
-    margin: 10px;
-    padding: 10px;
-}
+ul{ padding: 10px 0px 0px 0px; }
 
-a{
-    text-decoration: none;
-    color: white;
-    padding: 0px 8px;
-}
+a{ text-decoration: none; color: white; padding: 0px 0px 0px 15px; }
 
-h2{
-    margin: 10px;
-    padding: 10px;
+h22{font-size: 24px; color: #F9FAF8;}
+headline{ font-size: 48px; font-weight: bolder;}
+
+.middle-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .first-section{
-    
+    background-color: #1F2937;
+    color: white;
+    margin: 0px;
+    padding: 80px 100px 80px 100px;
+    display: flex;
+}
+
+.first-paragraph{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 0px 0px;
+}
+
+.main-image, .first-paragraph{flex: 1;}
+
+.first-button{
+    margin-top: auto;
+    width: 150px;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #3882F6;
+    border: none;
 }
 
 .main-image{
     object-fit: cover;
-    max-height: 200px;
+    max-height: 250px;
+    min-height: 250px;
 }
 
 footer{
@@ -49,4 +74,50 @@ footer{
     padding: 10px;
 }
 
+.second-section{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+.info{
+    align-self: center;
+    justify-content: center;
+    padding: 20px;
+}
+.small-images{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.image-text{
+    padding: 0px;
+    margin: 10px 0px 80px 0px;
+    width: 200px;
+}
+.small-image-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+}
+.icon-pic1, .icon-pic2, .icon-pic3, .icon-pic4{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    object-position: 0% 25%;
+    border-radius: 10px;
+    outline: 2px solid blue;
+}
+.icon-pic2{
+    object-position: 0% 35%;
+}
+
+.icon-pic3{
+    object-position: 25%;
+}
+
+.icon-pic4{
+    object-position: 0% 45%;
+}
